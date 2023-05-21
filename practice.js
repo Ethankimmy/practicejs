@@ -60,8 +60,7 @@ function playGame(playerMove) {
 
   localStorage.setItem('score', JSON.stringify(score));
 
-  alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
+  alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`);
 }
 
 function pickComputerMove() {
