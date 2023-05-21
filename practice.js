@@ -4,6 +4,9 @@ let score = JSON.parse(localStorage.getItem('score')) || {
   ties: 0
 };
 
+document.querySelector('.score')
+.innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+
 /*
 if (!score) {
   score = {
