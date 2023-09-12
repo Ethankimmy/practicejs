@@ -48,6 +48,7 @@ function playGame(playerMove) {
     } else if (computerMove === 'scissors') {
       result = 'You win.';
     }
+    return result;
   }
 
   if (result === 'You win.') {
@@ -63,7 +64,7 @@ function playGame(playerMove) {
   alert(`You picked ${playerMove}. Computer picked ${computerMove}. `);
 }
 document.querySelector('.js-result')
-.innerHTML = `${result}`;
+.innerHTML = playGame();
 
 function pickComputerMove() {
   const randomNumber = Math.random();
